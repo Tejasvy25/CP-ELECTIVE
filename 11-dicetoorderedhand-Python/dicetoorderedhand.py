@@ -10,6 +10,10 @@
 # assert(dicetoorderedhand(2,2,2) == 222)
 
 
-def dicetoorderedhand(a, b, c):
-	# your code goes here
-	pass
+def dicetoorderedhand(a, b, c): 
+    l=[a,b,c] 
+    l.sort(reverse=True)
+    s=""
+    for i in l:
+        s=s+str(i)
+    return int(s)
