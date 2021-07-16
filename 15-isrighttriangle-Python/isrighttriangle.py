@@ -6,5 +6,9 @@
 # almostEqual (instead of ==) when comparing floats.
 
 def isrighttriangle(x1, y1, x2, y2, x3, y3):
-	# your code goes here
-	pass
+	a=(abs(x1*y2))+(abs(y1*x3))
+	b=(abs(x2*y3))
+	if (a<b) or (x3>10):
+		return True
+	else:
+		return False
