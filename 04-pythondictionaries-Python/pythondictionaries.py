@@ -3,12 +3,10 @@ You're going to work on a dictionary that
 stores cities by country and continent.
 One is done for you - the city of Mountain 
 View is in the USA, which is in North America.
-
 You need to add the cities listed below by
 modifying the structure.
 Then, you should print out the values specified
 by looking them up in the structure.
-
 Cities to add:
 Bangalore (India, Asia)
 Atlanta (USA, North America)
@@ -34,20 +32,21 @@ Asian City - Country"""
 def sortUSA():
     '''Return all the cities in the USA in alphabetical order'''
     return sorted(locations['North America']['USA'])
-
+    
+    
 def alphaAsia():
-    city=list()
+    '''Return all the cities in Asia continent in alphabetical order'''
+    city = list()
     for a in locations['Asia']:
         for b in locations['Asia'][a]:
-            city.extend([b+'   -   '+a])
+            city.extend([ b+' - '+a])
     return sorted(city)
-        
-    
-    
-'''Return all the cities in Asia continent in alphabetical order'''
+
 # Note: Check for test cases to understand the output format.
 locations = {'North America': {'USA': ['Mountain View']}}
-locations = ['Asia'] = {'India': ['Banglore']}
-locations = ['North America']['USA'].append("Atlanta")
-locations = ['Atlanta']={"Atlanta": ['Cairo']}
-locations = ['Asia']['China'] = ['Shanghai']
+locations['Asia'] = {'India' : ['Bangalore']}
+locations['North America']['USA'].append('Atlanta')
+locations['Atlanta'] = {'Atlanta' : ['Cairo']}
+locations['Asia']['China'] = ['Shanghai']
+
+# locations = {'North America': {'USA': ['Mountain View','Atlanta']},'Asia':{'India':['Bangalore'],'China':['Shanghai']},'Africa':{'Egypt':['Cairo']}  }
