@@ -33,6 +33,8 @@ def countOccurrences(x, d):
         x = int(x / 10);
  
     return count;
+         
+    
  
      
     
