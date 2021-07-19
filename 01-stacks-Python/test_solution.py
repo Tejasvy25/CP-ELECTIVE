@@ -1,3 +1,4 @@
+
 import os,sys
 sys.path.append(os.getcwd())
 from stacks import stack
@@ -28,3 +29,4 @@ def test_pop2(result):
 def test_pop3(result):
     stack.push(e4)    
     assert stack.pop().value == result
+
