@@ -8,6 +8,8 @@
 
 import math
 def fun_find_int_roots(a, b, c):
-	return 0, 0
-
+    r=(b**2)-(4*a*c)
+    sol1=(-b-(math.sqrt(r)))/2*a
+    sol2=(-b+(math.sqrt(r)))/2*a
+    return sol1,sol2
 
