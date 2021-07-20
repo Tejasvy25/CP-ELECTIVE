@@ -5,5 +5,8 @@
 import math
 
 def fun_threelines_area(a, b, c):
-	return 0
+	per = (a + b + c) / 2  
+	ar = math.sqrt((per*(per-a)*(per-b)*(per-c)))
+	return int(ar)
+
 	
