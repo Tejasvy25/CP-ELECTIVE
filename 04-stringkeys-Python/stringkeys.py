@@ -6,15 +6,13 @@ class HashTable(object):
     #table
     def __init__(self):
         self.table = [None]*10000
-
-    def store(self, string):
-        """Input a string that's stored in 
-        the table."""
-        # Hash Value = (ASCII Value of First Letter * 100) + ASCII Value of Second Letter 
+    def calculate_hash_value(self, string):
+        """Helper function to calulate a
+        hash value from a string."""
         # Your code goes here
-        x=self.calculate_hash_value(string)
-        self.table.insert(x,string)
-        return -1
+        H=(ord(string[0])*100)+ ord(string[1])
+        return H
+    
         
         
     def lookup(self, string):
@@ -27,12 +25,17 @@ class HashTable(object):
             return -1
         else:
             return x
-       
-    def calculate_hash_value(self, string):
-        """Helper function to calulate a
-        hash value from a string."""
+        
+        
+    def store(self, string):
+        """Input a string that's stored in 
+        the table."""
+        # Hash Value = (ASCII Value of First Letter * 100) + ASCII Value of Second Letter 
         # Your code goes here
-        H=(ord(string[0])*100)+ ord(string[1])
-        return H
+        x=self.calculate_hash_value(string)
+        self.table.insert(x,string)
+        return -1
+       
+    
 
 
