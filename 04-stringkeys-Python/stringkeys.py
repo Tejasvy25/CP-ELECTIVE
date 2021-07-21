@@ -1,8 +1,9 @@
 """Write a HashTable class that stores strings
 in a hash table, where keys are calculated
 using the first two letters of the string."""
-
+#hash table do not store null values
 class HashTable(object):
+    #table
     def __init__(self):
         self.table = [None]*10000
 
