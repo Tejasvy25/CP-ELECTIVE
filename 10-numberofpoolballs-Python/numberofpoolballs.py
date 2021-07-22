@@ -15,4 +15,10 @@ def numberofpoolballs(balls):
             L.append(a)
             s=sum(L)
     return s
+
+# def numberofpoolballs(balls):
+#     s=0
+#     for a in range(balls+1):
+#         s=s+a
+#     return s
             
