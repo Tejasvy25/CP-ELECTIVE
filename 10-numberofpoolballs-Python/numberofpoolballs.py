@@ -19,6 +19,6 @@ def numberofpoolballs(balls):
 # def numberofpoolballs(balls):
 #     s=0
 #     for a in range(balls+1):
-#         s=s+a
+#         s=int(s)+int(a)
 #     return s
             
