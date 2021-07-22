@@ -10,15 +10,15 @@
     # return result
         
 def read2DArray():
-    a = []
-    l = int(input())
-    for i in range(l):
-        s = input().split(" ")
-        t = []
-        for j in range(len(s)):
-            t.append(int(s[j]))
-        a.append(t)
-    return a
+    aa = []
+    ll = int(input())
+    for i in range(ll):
+        ss = input().split(" ")
+        tt = []
+        for j in range(len(ss)):
+            tt.append(int(ss[j]))
+        aa.append(tt)
+    return aa
 
 def fun_matrixmultiply(m1, m2):
         # your code goes here
