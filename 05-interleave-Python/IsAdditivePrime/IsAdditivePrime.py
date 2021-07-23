@@ -22,6 +22,4 @@ def addictive(n):
         return False
     else:
         return True
-  
-    
-print(addictive(98))
+print(addictive(29))
