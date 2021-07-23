@@ -6,7 +6,7 @@
 
 import math
 def PowerfulNumber(n):
-	power = []
+	power = [] # 2 2 2 2
 	res=n
 	while n % 2 == 0:
 		power.append(2)
@@ -15,8 +15,6 @@ def PowerfulNumber(n):
 		while n % i== 0:
 			power.append(i),
 			n = n / i
-	# if n > 2:
-    #     print (n)
 	num= set(power)
 	ber=list(num)
 	for i in range (len(ber)):
