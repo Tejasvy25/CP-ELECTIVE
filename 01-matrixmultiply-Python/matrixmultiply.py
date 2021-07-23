@@ -9,20 +9,10 @@
     # result = [[sum(a*b for a,b in zip(X_row,Y_col)) for Y_col in zip(*m2)] for X_row in m1] #zip for multiplicating each element 
     # return result
         
-def read2DArray():
-    aa = []
-    ll = int(input())
-    for i in range(ll):
-        ss = input().split(" ")
-        tt = []
-        for j in range(len(ss)):
-            tt.append(int(ss[j]))
-        aa.append(tt)
-    return aa
 
 def fun_matrixmultiply(m1, m2):
         # your code goes here
-    if(len(m1[0])!=len(m2)):
+    if(len(m1[0])!=len(m2)): 
         return None
     else:
         m3=[]
