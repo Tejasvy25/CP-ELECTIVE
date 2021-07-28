@@ -6,5 +6,8 @@
 # the list.
 
 def issorted(a):
-	# your code goes here
-	pass
+    l=[]
+    l=a
+    print(l)
+    
+ 
