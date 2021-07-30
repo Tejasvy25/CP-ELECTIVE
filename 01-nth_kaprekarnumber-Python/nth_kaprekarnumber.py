@@ -6,53 +6,30 @@
 # With this in mind, write the function nthKaprekarNumber(n) that takes a non-negative int n 
 # and returns the nth Kaprekar number, where as usual we start counting at n==0.
 
-
 import math
-def iskaprekar( n):
-    if n == 1 :
-        return True
-     
-    #Count number of digits in square
-    sq_n = n * n
-    count_digits = 1
-    while not sq_n == 0 :
-        count_digits = count_digits + 1
-        sq_n = sq_n / 10
-     
-    sq_n = n*n  # Recompute square as it was changed
-     
-    # Split the square at different poitns and see if sum
-    # of any pair of splitted numbers is equal to n.
-    r_digits = 0
-    while r_digits< count_digits :
-        r_digits = r_digits + 1
-        eq_parts = (int) (math.pow(10, r_digits))
-         
-        # To avoid numbers like 10, 100, 1000 (These are not
-        # Karprekar numbers
-        if eq_parts == n :
-            continue
-         
-        # Find sum of current parts and compare with n
-         
-        sum = sq_n/eq_parts + sq_n % eq_parts
-        if sum == n :
-            return True
-     
-    # compare with original number
-    return False
-     
-def fun_nth_kaprekarnumber(n):
-    i=1
-    j=0
-    while i<10000 and j<n:
-        if (iskaprekar(i)) :
-            j=j+1
-        i=i+1
-        print(i)
-    return i
-   
-     
+
+def fun_nth_kaprekarnumber(a):
+    start=1
+    end=10000
+    l=[]
+    co=0
+    if a==0:
+        l.insert(co,1)
+        co+=1
+    for i in range(start, end + 1):
+        sqr = i ** 2
+        digits = str(sqr)
+        length = len(digits)
+        for x in range(1, length):
+            left = int("".join(digits[:x]))
+            right = int("".join(digits[x:]))
+            if (left + right) == i:
+                l.insert(co,str(i))
+                co+=1
+                #print("Number: " + str(i) + "Left: " + str(left) + " Right: " + str(right))
+    return int(l[a])
+
+
   
     
 
