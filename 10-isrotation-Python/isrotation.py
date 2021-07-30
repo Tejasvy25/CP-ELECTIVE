@@ -6,21 +6,12 @@
 # is a rotation of itself.
 
 def isrotation(x, y):
-    s=str(x)
-    r=str(y)
-    rev=r[::-1]
-    if s==r:
-        return True
-    else:
-        
-        if len(s)==len(r):
-            res=s[len(s)-2:]+s[0:len(s)-2]
-            
-            if res==r:
-                return True
-            elif s==rev:
-                return True
-            else:
-                return False      
-        else:
-            return False
+    x=str(x)
+    y=str(y)
+    rev=y[::-1]
+    if len(x)==len(y):
+        res=x[len(x)-2:]+x[0:len(x)-2]
+        if (res==y or x==rev) or x==y: return True
+        else: return False
+    return False
+    
