@@ -7,28 +7,22 @@
 # and returns the nth Kaprekar number, where as usual we start counting at n==0.
 
 import math
+def k(n):
+    n2 = str(n**2)
+    for i in range(len(n2)):
+        a, b = int(n2[:i] or 0), int(n2[i:])
+        if b and a + b == n:
+            return n
+			#return (n, (n2[:i], n2[i:]))
+
 
 def fun_nth_kaprekarnumber(a):
-    start=1
-    end=10000
-    l=[]
-    co=0
-    if a==0:
-        l.insert(co,1)
-        co+=1
-    for i in range(start, end + 1):
-        sqr = i ** 2
-        digits = str(sqr)
-        length = len(digits)
-        for x in range(1, length):
-            left = int("".join(digits[:x]))
-            right = int("".join(digits[x:]))
-            if (left + right) == i:
-                l.insert(co,str(i))
-                co+=1
-                #print("Number: " + str(i) + "Left: " + str(left) + " Right: " + str(right))
-    return int(l[a])
+    x1=[]
+    x1=[x for x in range(1,100000) if k(x)] 
+    return int(x1[a])
+    
 
+    
 
   
     
