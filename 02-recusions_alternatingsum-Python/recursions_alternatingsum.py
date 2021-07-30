@@ -7,7 +7,9 @@
 def fun_recursions_alternatingsum(l):
     if len(l)==0:
         return 0
-    return l[0]-fun_recursions_alternatingsum(l[1:])
+    return l[0]-fun_recursions_alternatingsum(l[1:]) # 1-(2,3,4,5) 2-(3,4,5) 3-(4,5) 4-5 
+                                                        # 1-(-2)         2-(4)          3-(-1)
+                                                            # 3
         
         
         
