@@ -17,7 +17,7 @@ def isPrime(n):
             return False
     return True
 
-def fun_nth_carolprime(n):
+def nth_carolprime(n):
     num = 2
     count = 0
     res = -1
