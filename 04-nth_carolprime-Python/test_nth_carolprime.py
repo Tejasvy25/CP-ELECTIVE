@@ -10,5 +10,5 @@ import pytest
 
 ])
 def test_fun_nth_carolprime(a, result):
-    assert fun_nth_carolprime(a) == result
+      assert fun_nth_carolprime(a) == result
 
