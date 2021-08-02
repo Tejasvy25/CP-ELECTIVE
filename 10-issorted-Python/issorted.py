@@ -18,4 +18,21 @@ def issorted(a):
     elif(count==len(a)-1):
         return True
     return False
+
+# a=[1,2,3,4,5]
+# temp=a
+# temp=temp.sort()
+# temp1=temp.sort(reverse=True)
+# count=0
+# count1=0
+# for i in range(0,len(temp)):
+#         if (a[i]==temp[i]):
+# 	count=count+1
+# for i in range(0,len(temp1)):
+#         if (a[i]==temp1[i]):
+# 	count1=count1+1
+# if count == len(temp) or count1==len(temp1)
+# 	return True
+# else:
+# 	return False
  
