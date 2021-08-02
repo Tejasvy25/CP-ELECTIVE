@@ -11,9 +11,9 @@ def median(a):
         
         return None
     if n % 2 == 0:
-        median1 = a[n//2]
-        median2 = a[n//2 - 1]
-        median = (median1 + median2)/2
+        med1 = a[n//2]
+        med2 = a[n//2 - 1]
+        median = (med1 + med2)/2
         return median 
     else:
         median = a[n//2]
