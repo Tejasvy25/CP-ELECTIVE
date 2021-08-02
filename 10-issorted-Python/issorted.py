@@ -6,8 +6,16 @@
 # the list.
 
 def issorted(a):
-    l=[]
-    l=a
-    print(l)
-    
+    # your code goes here
+    count=0
+    for i in range(len(a)):
+        if(i==len(a)-1):
+            break
+        if(a[i]>a[i+1]):
+            count+=1
+    if(count==0):
+        return True
+    elif(count==len(a)-1):
+        return True
+    return False
  
