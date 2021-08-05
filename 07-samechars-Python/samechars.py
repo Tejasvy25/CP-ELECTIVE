@@ -8,7 +8,6 @@
 def samechars(s1, s2):
     s1=str(s1)
     s2=str(s2)
-    # if s1==s2:
     
     for i in range(len(s2)):
         if s2[i] in s1:
