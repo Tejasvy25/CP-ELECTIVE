@@ -6,15 +6,16 @@
 
 
 def fun_carrylessadd(x, y):
-    sol=0
-    p= 1
-    tot=0
+    res=0
+    a=1
+    b=0
     while(x or y):
-        tot=((x%10)+(y%10))
-        tot=tot%10
-        sol=(tot*p)+sol
+        b=((x%10)+(y%10))
+        b=b%10
+        res=(b*a)+res
         x=x//10
         y=y//10
-        p=p*10
-    return sol
+        a=a*10
+    return res
+  
 
